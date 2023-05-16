@@ -1,13 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './components/Home';
+import Paris from './components/Paris';
+import NewYork from './components/NewYork';
+// import Root, { loader as rootLoader } from './root';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element:  <Home />,
+      exact: true,
+      // loader: rootLoader,
+    },
+    {
+      path: "/paris",
+     element:  <Paris />,
+    //  loader: rootLoader,
+    },
+    {
+      path: "/new-york",
+     element:  <NewYork />,
+    //  loader: rootLoader,
+    }
+  ]
+);
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

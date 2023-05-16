@@ -1,0 +1,36 @@
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .container h1 {
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    margin-left: 10px;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

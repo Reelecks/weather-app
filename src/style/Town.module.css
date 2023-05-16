@@ -1,0 +1,15 @@
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .container h1 {
+    text-align: center;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
